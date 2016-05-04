@@ -23,7 +23,8 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
 
   <!-- Load the page styles. -->
   <link href="css/style.css" rel="stylesheet" type="text/css">
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/ionicons.min.css">
 
   <!--
   jQuery is a common JavaScript library for reading and making changes to the
@@ -51,8 +52,8 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
 
   <meta name="viewport" content="width=device-width">
 </head>
-<body>
-  <div class="container-fluid" >
+<body unresolved>
+  <div class="container-fluid">
       <!-- You'll be deleting this line in the course -->
     
     <!--
@@ -69,36 +70,50 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
             
             <div class="content">
                 <div class="about-me">
+                <i class="ion-person"></i>
                   <h2>About Me</h2>
+                  <br>
                 </div>
 
                 <div class="skills">
+                    <i class="ion-code"></i>
                     <h2>Skills</h2>
+                    <br>
                 </div>
             
             
                 <div id="workExperience" class='gray'>
+                  <i class="ion-settings"></i>
                   <h2>Work Experience</h2>
+                  <br>
                 </div>
                 
                 <div id="education" class='gray'>
+                  <i class="ion-university"></i>
                   <h2>Education</h2>
+                  <br>
                 </div>
                 
                 <div id="letsConnect" class='dark-gray'>
+                  <i class="ion-email"></i>
                   <h2 class='orange center-text'>Let's Connect</h2>
-                    <ul id="footerContacts" class="flex-box">
+                  <br>
+                  <ul id="footerContacts" class="flex-box">
                   </ul>
                 </div>
             </div>
       </div>
-      <div class="col-sm-8 project-page">
+      <div class="col-sm-8 project-page" id="main">
           <div id="projects">
+              <i class="ion-ios-briefcase"></i>
               <h2>Projects</h2>
+              <br>
           </div>
 
-          <div id="map-div">
+          <div id="mapDiv">
+                <i class="ion-ios-home"></i>
                 <h2>Where I've Lived and Worked</h2>
+              
           </div>
       </div>
 

@@ -2,7 +2,7 @@ var bio = {
 	"name" : "Telmo Sampaio",
 	"role" : "Front End Developer",
 	"welcomeMessage" : "I'm a student from the Udacity Nanodegree Front End Developement. This is my online resume project where you can find some information about me and the projects that I'm currently working on.", 
-	"image" : "images/ts.jpg",
+	"image" : "images/ts2.jpg",
 	"contacts" : [{
 		"mobile" : "07852726903",
 		"skype" : "telmo.sampaio", 
@@ -41,7 +41,7 @@ var projects = {
 		"title" : "Online Resume",
 		"dates" : "2016", 
 		"description" : "Build a professional and responsive Portfolio Website", 
-		"images" : ["images/1.jpg","images/2.jpg","images/3.jpg","images/4.jpg"]
+		"images" : ["images/project2.jpg"]
 	}]
 };
 
@@ -173,4 +173,4 @@ education.display();
 bio.display();
 
 $("#main").append(internationalizeButton);
-$("#mapDiv").append(googleMap);
+$('#mapDiv').append(googleMap);

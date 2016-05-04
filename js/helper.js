@@ -95,6 +95,7 @@ This is the fun part. Here's where we generate the custom Google Map for the web
 See the documentation below for more details.
 https://developers.google.com/maps/documentation/javascript/reference
 */
+
 var map;    // declares a global map variable
 
 
@@ -103,7 +104,7 @@ Start here! initializeMap() is called when page is loaded.
 */
 function initializeMap() {
 
-  var locations;
+  var locations;        
 
   var mapOptions = {
     disableDefaultUI: true
@@ -119,13 +120,13 @@ function initializeMap() {
   written for bio, education, and work.
   */
   function locationFinder() {
-
+    
     // initializes an empty array
     var locations = [];
 
     // adds the single location property from bio to the locations array
     locations.push(bio.contacts.location);
-
+    
     // iterates through school locations and appends each location to
     // the locations array
     for (var school in education.schools) {
@@ -160,7 +161,7 @@ function initializeMap() {
       position: placeData.geometry.location,
       title: name
     });
-
+    
     // infoWindows are the little helper windows that open when you click
     // or hover over a pin on a map. They usually contain more information
     // about a location.
@@ -188,7 +189,7 @@ function initializeMap() {
   */
   function callback(results, status) {
     if (status == google.maps.places.PlacesServiceStatus.OK) {
-      createMapMarker(results[0]);
+      createMapMarker(results[0])
     }
   }
 
@@ -201,16 +202,16 @@ function initializeMap() {
     // creates a Google place search service object. PlacesService does the work of
     // actually searching for location data.
     var service = new google.maps.places.PlacesService(map);
-
+    
     // Iterates through the array of locations, creates a search object for each location
-    for (var place in locations) {
+    for (place in locations) {
 
       // the search request object
       var request = {
         query: locations[place]
-      };
+      }
 
-      // Actually searches the Google Maps API for location data and runs the callback
+      // Actually searches the Google Maps API for location data and runs the callback 
       // function with the search results after each search.
       service.textSearch(request, callback);
     }
@@ -225,19 +226,19 @@ function initializeMap() {
   // pinPoster(locations) creates pins on the map for each location in
   // the locations array
   pinPoster(locations);
-
-}
+  
+};
 
 /*
-Uncomment the code below when you're ready to implement a Google Map!
+Uncomment all the code below when you're ready to implement a Google Map!
 */
 
 // Calls the initializeMap() function when the page loads
 window.addEventListener('load', initializeMap);
 
-// Vanilla JS way to listen for resizing of the window
+// Vanilla JS way to listen for resizing of the window 
 // and adjust map bounds
 window.addEventListener('resize', function(e) {
   // Make sure the map bounds get updated on page resize
- map.fitBounds(mapBounds);
+  map.fitBounds(mapBounds);
 });

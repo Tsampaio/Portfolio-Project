@@ -7,6 +7,14 @@
 
 }
 
+a:link {
+  text-decoration: none;
+}
+
+work-entry a:hover {
+  text-decoration: none;
+}
+
 h2 {
   text-transform: uppercase;
 }
@@ -24,11 +32,11 @@ h2 {
 }
 
 .content {
-
-  background-image:
+  background-color: #81878a;
+  /*background-image:
     linear-gradient(
       #81878a, #263137
-    );
+    );*/
 
   color: #fff;
 
@@ -41,7 +49,7 @@ h2 {
 }
 
 .white-text {
-  color: #8c948c;
+  color: ##d0d0d0;
 }
 
 .about-me span, .skills span {
@@ -58,10 +66,29 @@ h2 {
   padding: 0;
   line-height: 15px;
   padding-left: 20px;
+  padding-bottom: 20px;
 }
 
 
 .img-project {
 
-  max-width: 100%;    
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 15px;
+  padding-top: 20px;
+}
+
+.project-entry a, .project-entry p, .ion-ios-briefcase, .ion-ios-home {
+
+  padding-left: 10%;
+}
+
+.about-me h2, .skills h2, #workExperience h2, #education h2, #letsConnect h2, #projects h2, #mapDiv h2 {
+  display: inline-block;
+}
+
+.ion-person, .ion-code, .ion-settings, .ion-university, .ion-email, .ion-ios-briefcase, .ion-ios-home {
+  font-size: 30px;
+  padding-right: 15px;
 }

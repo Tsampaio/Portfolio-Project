@@ -118,7 +118,7 @@ education.display = function() {
 
 		var onlineName = HTMLonlineSchool.replace("%data%",education.onlineCourses[i].school);
 		var onlineDegree = HTMLonlineTitle.replace("%data%",education.onlineCourses[i].title);
-		var onlinedDates = HTMLonlineDates.replace("%data%",education.onlineCourses[i].dates);
+		var onlinedDates = HTMLonlineDates.replace("%data%",education.onlineCourses[i].date);
 		var onlineUrl = HTMLonlineURL.replace("%data%",education.onlineCourses[i].url);
 
 		$("#education").append(onlineDegree + onlineName, onlinedDates, onlineUrl);
